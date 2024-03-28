@@ -1,5 +1,6 @@
 import { Product } from "@/types";
 import { Star } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const TrendingProductCard = ({
@@ -21,7 +22,9 @@ const TrendingProductCard = ({
           </span>
         </div>
         <figure className="  ">
-          <img
+          <Image
+            width={200}
+            height={200}
             className="transition duration-700 hover:scale-90 w-full"
             src={trendingProduct.image}
             alt="Shoes"

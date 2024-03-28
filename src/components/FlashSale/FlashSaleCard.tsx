@@ -16,7 +16,9 @@ const FlashSaleCard = ({ product }: { product: Product }) => {
         </span>
 
         <div className="relative">
-          <img
+          <Image
+            width={200}
+            height={200}
             className="transition duration-700 hover:scale-110 w-full"
             src={product.image}
             alt="product image"

@@ -1,4 +1,5 @@
 import { Product } from "@/types";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -6,7 +7,9 @@ const CategoryCard = ({ categoryProduct }: { categoryProduct: Product }) => {
   return (
     <div className="text-center">
       <div className="border-dotted border-2 border-gray-500 rounded-full mb-5">
-        <img
+        <Image
+          width={200}
+          height={200}
           className="rounded-full  border p-2"
           src={categoryProduct.image}
           alt="product image"

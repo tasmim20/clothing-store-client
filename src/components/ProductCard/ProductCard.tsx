@@ -1,4 +1,5 @@
 import { Product } from "@/types";
+import Image from "next/image";
 import React from "react";
 
 const ProductCard = ({ product }: { product: Product }) => {
@@ -16,7 +17,9 @@ const ProductCard = ({ product }: { product: Product }) => {
           </span>
         </div>
         <figure className="  ">
-          <img
+          <Image
+            width={200}
+            height={200}
             className=" w-full p-2 rounded-lg transition duration-700 hover:scale-105 "
             src={product.image}
             alt="Shoes"

@@ -5,7 +5,7 @@ import React from "react";
 const ProductDetailPage = async (props: any) => {
   console.log(props.params.productId);
   const res = await fetch(
-    `http://localhost:5000/api/kids-wear/${props.params.productId}`
+    `https://chutti-clothing-server.vercel.app/api/kids-wear/${props.params.productId}`
   );
   const { name, image, rating, price, description, brand } = await res.json();
 

@@ -14,22 +14,27 @@ const HeroSection = () => {
             width={3000}
             height={800}
           />
-          <div className="absolute inset-0 grid lg:grid-cols-2 grid-cols-1 justify-center items-center">
+          <div className="absolute inset-0 grid grid-cols-2 justify-center items-center overflow-hidden">
             <div></div>
             <div>
-              <h1 className=" text-4xl  font-bold">For Little Champs</h1> <br />
+              <h1 className=" lg:text-4xl text-2xl  font-bold">
+                For Little Champs
+              </h1>{" "}
+              <br />
               <h1
                 style={{ color: "#90649b" }}
-                className="text-violet-700 text-5xl font-extrabold"
+                className="text-violet-700 lg:text-5xl text-3xl font-extrabold"
               >
                 Summer Collection
               </h1>{" "}
               <br />
-              <h1 className=" text-xl ">Flat 10% off on order above $59.49</h1>
+              <h1 className=" lg:text-xl text-sm ">
+                Flat 10% off on order above $59.49
+              </h1>
               <h1>
                 <button
                   style={{ backgroundColor: "#11d6e1" }}
-                  className="btn btn-active text-white rounded-full px-10 text-xl mt-5"
+                  className="btn btn-active text-white rounded-full lg:px-10 px-5 lg:text-xl text-sm lg:mt-5 mt-2"
                 >
                   Shop now
                 </button>
@@ -53,25 +58,27 @@ const HeroSection = () => {
             width={3000}
             height={800}
           />
-          <div className="absolute inset-0 grid lg:grid-cols-2 grid-cols-1 justify-center items-center">
+          <div className="absolute inset-0 grid grid-cols-2  justify-center items-center  overflow-hidden">
             <div></div>
             <div>
-              <h1 className=" text-4xl  font-bold">Special Kids Offer</h1>{" "}
+              <h1 className=" lg:text-4xl text-2xl  font-bold">
+                Special Kids Offer
+              </h1>{" "}
               <br />
               <h1
                 style={{ color: "#90649b" }}
-                className="text-violet-700 text-5xl font-extrabold"
+                className="text-violet-700 lg:text-5xl text-3xl font-extrabold"
               >
                 Big Discount
               </h1>{" "}
               <br />
-              <h1 className=" text-xl ">
+              <h1 className=" lg:text-xl text-sm ">
                 Celebrate New Year 20% offer on latest Model
               </h1>
               <h1>
                 <button
                   style={{ backgroundColor: "#fe53bb" }}
-                  className="btn btn-active text-white rounded-full px-10 text-xl mt-5"
+                  className="btn btn-active text-white rounded-full lg:px-10 px-5 lg:text-xl text-sm lg:mt-5 mt-2"
                 >
                   Shop now
                 </button>
@@ -94,23 +101,26 @@ const HeroSection = () => {
             width={3000}
             height={800}
           />
-          <div className="absolute inset-0 grid lg:grid-cols-2 grid-cols-1  justify-start items-center pl-36 ">
+          <div className="absolute inset-0 grid lg:grid-cols-2 grid-cols-1  justify-start items-center pl-36  overflow-hidden ">
             <div>
-              <h1 className=" text-4xl  font-bold">Princess Dresses</h1> <br />
+              <h1 className=" lg:text-4xl text-2xl font-bold">
+                Princess Dresses
+              </h1>{" "}
+              <br />
               <h1
                 style={{ color: "#90649b" }}
-                className="text-violet-700 text-5xl font-extrabold"
+                className="text-violet-700 lg:text-5xl text-3xl font-extrabold"
               >
                 Kids Shopping
               </h1>{" "}
               <br />
-              <h1 className=" text-xl ">
+              <h1 className=" lg:text-xl text-sm ">
                 Huge Offer up to 70% on baby clothes
               </h1>
               <h1>
                 <button
                   style={{ backgroundColor: "#11d6e1" }}
-                  className="btn btn-active text-white rounded-full px-10 text-xl mt-5"
+                  className="btn btn-active text-white rounded-full lg:px-10 px-5 lg:text-xl text-sm lg:mt-5 mt-2"
                 >
                   Shop now
                 </button>
@@ -134,22 +144,27 @@ const HeroSection = () => {
             width={3000}
             height={800}
           />
-          <div className="absolute inset-0 grid lg:grid-cols-2 grid-cols-1 justify-center items-center">
+          <div className="absolute inset-0 grid grid-cols-2  justify-center items-center  overflow-hidden">
             <div></div>
             <div>
-              <h1 className=" text-4xl  font-bold">For Little Champs</h1> <br />
+              <h1 className=" lg:text-4xl text-2xl  font-bold">
+                For Little Champs
+              </h1>{" "}
+              <br />
               <h1
                 style={{ color: "#90649b" }}
-                className="text-violet-700 text-5xl font-extrabold"
+                className="text-violet-700 lg:text-5xl text-3xl font-extrabold"
               >
                 Summer Collection
               </h1>{" "}
               <br />
-              <h1 className=" text-xl ">Flat 10% off on order above $59.49</h1>
+              <h1 className=" lg:text-xl text-sm ">
+                Flat 10% off on order above $59.49
+              </h1>
               <h1>
                 <button
                   style={{ backgroundColor: "#11d6e1" }}
-                  className="btn btn-active text-white rounded-full px-10 text-xl mt-5"
+                  className="btn btn-active text-white rounded-full lg:px-10 px-5 lg:text-xl text-sm lg:mt-5 mt-2"
                 >
                   Shop now
                 </button>

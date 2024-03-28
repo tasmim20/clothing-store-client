@@ -7,31 +7,37 @@ import React from "react";
 
 const page = async () => {
   //flash sale products
-  const res = await fetch("http://localhost:5000/api/flash-sale", {
-    next: {
-      revalidate: 30,
-    },
-  });
+  const res = await fetch(
+    "https://chutti-clothing-server.vercel.app/api/flash-sale",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const products = await res.json();
-  // console.log("product", products);
 
   //category
-  const res3 = await fetch("http://localhost:5000/api/kids-wear", {
-    next: {
-      revalidate: 30,
-    },
-  });
+  const res3 = await fetch(
+    "https://chutti-clothing-server.vercel.app/api/kids-wear",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const categoryProducts = await res3.json();
-  // console.log(categoryProducts);
 
   //trending products
-  const res2 = await fetch("http://localhost:5000/api/trending-product", {
-    next: {
-      revalidate: 30,
-    },
-  });
+  const res2 = await fetch(
+    "https://chutti-clothing-server.vercel.app/api/trending-product",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const trendingProducts = await res2.json();
-  // console.log(trendingProducts);
 
   return (
     <div>

@@ -2,9 +2,11 @@ import { Product } from "@/types";
 import React from "react";
 
 const AllProductPage = async () => {
-  const res = await fetch("http://localhost:5000/api/kids-wear");
+  const res = await fetch(
+    "https://chutti-clothing-server.vercel.app/api/kids-wear"
+  );
   const products = await res.json();
-  console.log("product", products);
+
   return (
     <div className="w-[90%] mx-auto mb-20">
       <h1

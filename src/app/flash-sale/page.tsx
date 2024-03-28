@@ -1,18 +1,23 @@
+import CountdownTimer from "@/components/FlashSale/CountDownTimer";
 import ProductCard from "@/components/ProductCard/ProductCard";
 import { Product } from "@/types";
 import React from "react";
 
 const FlashSalePage = async () => {
-  const res = await fetch("http://localhost:5000/api/flash-sale", {
-    next: {
-      revalidate: 30,
-    },
-  });
+  const res = await fetch(
+    "https://chutti-clothing-server.vercel.app/api/flash-sale",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const products = await res.json();
-  console.log("product", products);
+  // console.log("product", products);
   return (
     <div className="w-[90%] mx-auto mb-20">
-      <h1 style={{ color: "#ff487a" }} className="text-4xl font-bold mt-20">
+      <CountdownTimer />
+      <h1 style={{ color: "#ff487a" }} className="text-4xl font-bold mt-10">
         All Flash Sale Products
       </h1>
 
